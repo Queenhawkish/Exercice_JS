@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex9</title>
+</head>
+
+<body>
+
+
+
+
+
+
+    <script>
+        var genre = prompt("Êtes-vous un homme ou une femme ?", "Entrer votre genre").toLowerCase 
+        var age = +prompt("Quel est votre âge ?", "33")
+        var homme = "Homme"
+        var femme = "Femme"
+        if ((genre == homme) && (age >= 18)) {
+            alert("L'utilisateur est un homme adulte")
+        } else if ((genre == homme) && (age <= 18)) {
+            alert("L'utilisateur est un homme mineur")
+        } else if ((genre == femme) && (age >= 18)) {
+            alert("L'utilisateur est une femme adulte")
+        } else if ((genre == femme) && (age <= 18)) {
+            alert("L'utilisateur est une femme mineur")
+        } else {
+            alert("Veuillez entrer des valeurs correct")
+        }
+    </script>
+</body>
+
+</html>

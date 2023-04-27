@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex10</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        var note = +prompt("Moyenne de l'élève", "0-20")
+        if (note == 0) {
+            alert("Un rendez-vous sera programmé en raison de la moyenne.")
+        } else if ((note >= 1) && (note <= 5)) {
+            alert("Trimeste insuffisant")
+        } else if ((note >= 6) && (note <= 10)) {
+            alert("Trimestre moyen")
+        } else if ((note >= 11) && (note <= 13)) {
+            alert("Bon trimestre")
+        } else if ((note >= 14) && (note <= 18)) {
+            alert("Excellent trimestre")
+        } else if ((note = 20) || (note >= 18)) {
+            alert("Félicitations")
+        } else if ((note < 0) || (note > 20)) {
+            alert("Entrer un chiffre entre 0 et 20")
+        } else {
+            alert("Entrer un nombre")
+        }
+    </script>
+</body>
+
+</html>
