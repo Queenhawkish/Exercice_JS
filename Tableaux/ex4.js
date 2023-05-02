@@ -10,7 +10,10 @@ tab [8] = " Septembre"
 tab [9] = " Octobre"
 tab [10] = " Novembre"
 tab [11] = " Décembre"
-for (let i = 0; i < tab.length; i++) {
-    const element = i + " -" + tab[i];
-    console.table(element)
-}
+// for (let i = 0; i < tab.length; i++) {
+//     const element = i + " -" + tab[i];
+//     console.table(element)
+// }
+tab.forEach((value, index) => {
+    console.log(index + " -" + value)
+});
