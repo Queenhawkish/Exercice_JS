@@ -15,21 +15,21 @@
     <script>
         var note = +prompt("Moyenne de l'élève", "0-20")
         if (note == 0) {
-            alert("Un rendez-vous sera programmé en raison de la moyenne.")
+            console.log("Un rendez-vous sera programmé en raison de la moyenne.")
         } else if ((note >= 1) && (note <= 5)) {
-            alert("Trimeste insuffisant")
+            console.log("Trimeste insuffisant")
         } else if ((note >= 6) && (note <= 10)) {
-            alert("Trimestre moyen")
+            console.log("Trimestre moyen")
         } else if ((note >= 11) && (note <= 13)) {
-            alert("Bon trimestre")
+            console.log("Bon trimestre")
         } else if ((note >= 14) && (note <= 18)) {
-            alert("Excellent trimestre")
-        } else if ((note = 20) || (note >= 18)) {
-            alert("Félicitations")
+            console.log("Excellent trimestre")
+        } else if ((note = 20) || (note > 18)) {
+            console.log("Félicitations")
         } else if ((note < 0) || (note > 20)) {
-            alert("Entrer un chiffre entre 0 et 20")
+            console.log("Entrer un nombre entre 0 et 20")
         } else {
-            alert("Entrer un nombre")
+            console.log("Entrer un nombre")
         }
     </script>
 </body>
