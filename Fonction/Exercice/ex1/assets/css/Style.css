@@ -1,0 +1,31 @@
+*{
+    text-align: center;
+}
+.start{
+    text-decoration: underline;
+    color: red;
+    font-size: 6em;
+}
+.click{
+    color: blueviolet;
+    background-color: cadetblue;
+    border: 10px solid cadetblue ;
+    border-radius: 5px;
+    font-size: 3em;
+    margin-top: 3em;
+}
+.reset{
+    margin-top: 5em;
+    font-size: 2em;
+    border-radius: 5px;
+    background-color: brown;
+    color: cornflowerblue;
+    border: 10px solid brown;
+}
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    background-color: black;
+    border: 10px solid black;
+}
