@@ -4,6 +4,7 @@ let tab = [
     [["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
     ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saterday", "Sunday"],
     ]]
-for (let i = 0; i < tab.length; i++) {
-    console.log(tab[11])
-}
+console.log(tab [0][0][10])
+console.log(tab [1][1][4])
+console.log(tab [1][0])
+console.log(tab [0][1])
