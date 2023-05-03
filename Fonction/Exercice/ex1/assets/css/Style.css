@@ -29,3 +29,8 @@ button:active{
     background-color: black;
     border: 10px solid black;
 }
+
+.time{
+    font-size: 30px;
+    margin-top: 2em;
+}
