@@ -1,6 +1,13 @@
 let tab = ["Cendrillon"]
-tab.push("Mulan" , "Peach" , "Raiponce" , "Belle" , "Vaiana" , "Daisy" , "Jasmine")
-console.log(tab)
+console.table(tab)
+tab.push("Mulan" , 
+"Peach" , 
+"Raiponce" , 
+"Belle" , 
+"Vaiana" , 
+"Daisy" , 
+"Jasmine")
+console.table(tab)
 tab.splice(2 , 1)
 tab.splice(5,1)
 console.table(tab)
