@@ -6,12 +6,17 @@
     text-decoration: underline;
     color: olivedrab;
     font-weight: 600;
+    margin-top: 1em;
+    text-shadow: 4px 0 3px;
+    margin-bottom: 1em;
 }
 
 .i{
     margin-top: 2em;
     font-size: 3em;
     width: 4em;
+    border-radius: 10px ;
+    box-shadow: 4px 3px ;
 }
 
 .send{
@@ -40,6 +45,9 @@ p{
     text-decoration: underline;
     font-weight: 500;
     font-size: 1.5em;
+    background-color: rgba(100, 148, 237, 0.597);
+    width: 15em;
+    margin: auto;
 }
 
 #ancien{
