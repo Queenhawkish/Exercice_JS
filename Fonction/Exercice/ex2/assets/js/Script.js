@@ -22,6 +22,7 @@ function comparer(input) {
     } else {
         mess.innerText = "Veuillez saisir un paramètre valide"
     }
+    document.getElementById('input').value = ""
 }
 
 send.addEventListener("click", function () {
