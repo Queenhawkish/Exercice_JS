@@ -4,7 +4,7 @@
 .title{
     font-size: 4em;
     text-decoration: underline;
-    color: red;
+    color: olivedrab;
     font-weight: 600;
 }
 
@@ -25,4 +25,23 @@
 button:hover{
     background-color: rgb(67, 97, 153);
     cursor: pointer;
+}
+
+.message{
+    color: red;
+    font-size: 4em;
+    text-decoration: underline;
+    font-weight: 600;
+    margin-top: 1em;
+}
+
+p{
+    color: orange;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+#ancien{
+    color: brown;
 }
