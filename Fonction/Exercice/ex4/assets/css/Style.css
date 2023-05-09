@@ -16,6 +16,14 @@
     background-color: darkolivegreen;
 }
 
+#nb1{
+    background-color: blue;
+}
+
+#nb2{
+    background-color: red;
+}
+
 .titre{
     font-size: 3em;
     margin: auto;
