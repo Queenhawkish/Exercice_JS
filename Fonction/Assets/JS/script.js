@@ -51,7 +51,7 @@
 // // Appelle de la fonction .onclick pas besoin des parenthèses , lors de l'appelle de la fonction 
 // // monBouton.onclick = makeAlert
 
-// // MEHTODE 3
+// // METHODE 3
 
 // // Mise en place d'un écouteurs sur l'éléments addEventListener
 

@@ -1,56 +1,169 @@
-*{
-    text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+* {
+    margin: 0;
 }
-.title{
-    font-size: 4em;
-    text-decoration: underline;
-    color: olivedrab;
-    font-weight: 600;
+
+.page {
+    display: flex;
+}
+
+
+.right{
+    display: flex;
+    background-color: rgba(100, 148, 237, 0.073);
+    width: 50%;
+    text-align: center;
+    border: 1px solid black;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imagechoisie{
+    background-image: url(../../assets/img/Campagne.jpg);
+    width: 35em;
+    height: 20em;
+    background-size: cover;
+    margin: auto;
+    margin-top: 0;
+}
+
+.titreapercu{
+    font-size: 2em;
+    width: 10em;
+    margin: auto;
     margin-top: 1em;
-    text-shadow: 4px 0 3px;
+}
+
+.image{
+    display: flex;
+    margin: auto;
+}
+
+.texte{
+    display: flex;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 25%;
+    background-color: rgba(255, 127, 80, 0.073);
+    border: 1px solid black;
+}
+
+.option{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 1em;
+    padding: 1em;
+}
+
+.titles{
+    display: flex;
+    width: 15em;
+    height: 2em;
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
     margin-bottom: 1em;
 }
 
-.i{
-    margin-top: 2em;
-    font-size: 3em;
-    width: 4em;
-    border-radius: 10px ;
-    box-shadow: 4px 0 3px 3px rgba(128, 128, 128, 0.515);
+.image{
+    display: inline-flex;
 }
 
-.send{
-    margin-top: 2em;
-    font-size: 2em;
-    background-color: cornflowerblue;
-    border: 2px solid cornflowerblue;
-    border-radius: 5px;
+.img{
+    width: 3em;
+    height: 1.5em;
+    margin: 10px;
 }
 
-button:hover{
-    background-color: rgb(67, 97, 153);
-    cursor: pointer;
+.img:hover{
+    -ms-transform: scale(10); /* IE 9 */
+    -webkit-transform: scale(10); /* Safari 3-8 */
+    transform: scale(10);
 }
 
-.message{
-    color: red;
-    font-size: 4em;
+.imgbut{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+button{
+    width: 3.5em;
+    padding-left: 0;
+    margin: auto;
+}
+
+.left{
+    display: flex;
+    background-color: rgba(0, 100, 0, 0.073);
+    width: 25%;
+    text-align: center;
+    border: 1px solid black;
+    flex-direction: column;
+}
+
+.titre{
     text-decoration: underline;
-    font-weight: 600;
+    font-size: 1.2em;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.police1{
+    font-family: 'Freehand', cursive;
+    font-size: 1.5em;
+    text-align: start;
+}
+
+.police2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    text-align: start;
+}
+
+.police3{
+    font-family: 'Satisfy', cursive;
+    font-size: 1.5em;
+    margin-top: 0.3em;
+    text-align: start;
+}
+
+.color{
+    margin: auto;
+}
+
+.styles{
+    width: 15em;
+    margin: auto;
+}
+
+#print{
+    width: fit-content;
+    text-align: center;
+    padding-left: 5px;
+}
+
+.texte{
     margin-top: 1em;
 }
 
-p{
-    color: orange;
-    text-decoration: underline;
-    font-weight: 500;
-    font-size: 1.5em;
-    background-color: rgba(100, 148, 237, 0.405);
-    width: 15em;
-    margin: auto;
-    padding: 3px;
-}
-
-#ancien{
-    color: brown;
+@media screen and (min-width : 200px) and (max-width : 920px) {
+    .page{
+        display: flex;
+        flex-direction: column;
+    }
+    .right{
+        width: 100%;
+    }
 }

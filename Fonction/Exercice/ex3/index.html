@@ -1,25 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/Style.css">
-    <title>Ex1</title>
+    <link rel="shortcut icon" href="assets/img/logo.jpg" type="image/x-icon">
+    <title>Générateur de carte postale</title>
 </head>
+
 <body>
-    <div class="title"></div>
-
-    <div id="ancien"></div>
-
-    <input class="i" id="input" type="text" placeholder="0-20">
-
-    <div ><button id="button" class="send">Envoyer</button></div> 
-
-    <div class="message" id="messages"></div>
-
+    <div class="page">
+        <div class="right">
+            <div id="titlea" class="titreapercu"></div>
+            <div class="imagechoisie" id="img">
+                <p class="texteinput" id="textarea"></p>
+            </div>
+        </div>
+        <div class="center">
+            <div class="option">
+                <label for="titlen" class="titre">Veuillez saisir un titre : </label>
+                <input type="text" name="titlen" class="titles" id="title" placeholder="Ceci est mon titre">
+            </div>
+            <div class="option">
+                <div class="titre">Veuillez saisir une image :</div>
+                <div class="image">
+                    <div class="imgbut">
+                        <img src="assets/img/montagne.webp" alt="Montagne" class="img" id="image1">
+                        <button id="but1">Choisir</button>
+                    </div>
+                    <div class="imgbut">
+                        <img src="assets/img/Mer.jpg" alt="Mer" class="img" id="image2">
+                        <button id="but2">Choisir</button>
+                    </div>
+                    <div class="imgbut">
+                        <img src="assets/img/Campagne.jpg" alt="Campagne" class="img" id="image3">
+                        <button id="but3">Choisir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="option">
+                <p class="titre">Saisir un texte : </p>
+                <textarea name="textecarte" id="txt" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="left">
+            <div class="option">
+                <p class="titre">Choisir une police :</p>
+                <p class="police1"><input type="radio" name="font" id="Freehand" checked> Apercu</p>
+                <p class="police2"><input type="radio" name="font" id="Dancing Script"> Apercu</p>
+                <p class="police3"><input type="radio" name="font" id="Satisfy"> Apercu</p>
+            </div>
+            <div class="option">
+                <p class="titre">Choisir le style</p>
+                <select name="style" id="style" class="styles">
+                    <option value="default">Selectionner</option>
+                    <option value="italic">Italic</option>
+                    <option value="bold">Gras</option>
+                    <option value="underline">Souligner</option>
+                </select>
+            </div>
+            <div class="option">
+                <p class="titre">Choisir une couleur pour le titre :</p>
+                <input type="color" name="titrecolor" id="color" class="color">
+                <p class="titre texte">Choisir une couleur de fond pour le titre :</p>
+                <input type="color" name="backgroundcolor" id="bgcolor" class="color">
+                <p class="titre texte">Choisir une couleur pour le texte</p>
+                <input type="color" name="textecolor" id="colort" class="color">
+            </div>
+            <div class="option">
+                <button id="print">Imprimer</button>
+            </div>
+        </div>
+    </div>
 
 
     <script src="assets/js/Script.js"></script>
 </body>
+
 </html>
