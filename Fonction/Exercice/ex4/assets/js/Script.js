@@ -223,5 +223,8 @@ function calculator() {
 
 equal.addEventListener("click", function () {
     calculator()
-    result.innerText = "=" + results.toFixed(3)
+    nb1.innerText = ""
+    nb2.innerText = ""
+    operation.innerText = ""
+    result.innerText =+ results.toFixed(5)
 })
