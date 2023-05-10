@@ -42,6 +42,8 @@ let nb2 = document.getElementById("nb2")
 
 let results = 0
 
+let virgule = 0
+
 divid.addEventListener("click", function () {
     operation.innerText = divid.innerText
 })
@@ -185,14 +187,18 @@ zero.addEventListener("click", function () {
 })
 
 point.addEventListener("click", function () {
-
     if (operation.innerText == divid.innerText ||
         operation.innerText == multiple.innerText ||
         operation.innerText == minus.innerText ||
         operation.innerText == plus.innerText) {
+            if(virgule==0)
         nb2.innerText += point.innerText
+        virgule = 1
     } else {
+        if(virgule==0){
         nb1.innerText += point.innerText
+        virgule = 1
+    }
     }
 })
 
@@ -207,15 +213,15 @@ function calculator() {
         case 'x':
             results = +nb1.innerText * +nb2.innerText;
             break;
-        case '÷': 
+        case '÷':
             results = +nb1.innerText / +nb2.innerText;
             break;
-        default :
-        break; 
+        default:
+            break;
     }
 }
 
 equal.addEventListener("click", function () {
     calculator()
-    result.innerText = "=" + results
+    result.innerText = "=" + results.toFixed(3)
 })
