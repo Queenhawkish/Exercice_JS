@@ -40,7 +40,7 @@ let nb1 = document.getElementById("nb1")
 
 let nb2 = document.getElementById("nb2")
 
-let results = ""
+let results = 0
 
 divid.addEventListener("click", function () {
     operation.innerText = divid.innerText
@@ -196,25 +196,26 @@ point.addEventListener("click", function () {
     }
 })
 
-function calculator(nb1 , nb2 , operation) {
-    console.log(nb1 , nb2 , operation)
-    switch (operation) {
+function calculator() {
+    switch (operation.innerText) {
         case '+':
             results = +nb1.innerText + +nb2.innerText;
+            break;
         case '-':
             results = +nb1.innerText - +nb2.innerText;
-        case '*':
+            break;
+        case 'x':
             results = +nb1.innerText * +nb2.innerText;
-        case '/': {
-            if (b !== 0)
-                results = +nb1.innerText / +nb2.innerText;
-            else
-                results = "infini";
-        }
+            break;
+        case '÷': 
+            results = +nb1.innerText / +nb2.innerText;
+            break;
+        default :
+        break; 
     }
 }
 
 equal.addEventListener("click", function () {
-    calculator(nb1 , nb2 , operation)
-    result.innerText = results
+    calculator()
+    result.innerText = "=" + results
 })
